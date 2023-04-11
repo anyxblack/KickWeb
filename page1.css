@@ -1,0 +1,260 @@
+@font-face {
+    font-family: "Monument";
+    src: url("MonumentExtended-Ultrabold.woff2") format("woff2");
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;900&display=swap');
+
+@keyframes titel-ani {
+    from {transform: translate(0%, 50%);}
+    to {transform: translate(0%, 0%);}
+}
+
+@keyframes img-ani {
+    from {transform: translate(0%, 70%);}
+    to {transform: translate(0%, 0%);}
+}
+
+@keyframes subtitel-ani {
+    from {transform: translate(0%, 40%);}
+    to {transform: translate(0%, 0%);}
+}
+
+@keyframes quote-ani {
+    from {transform: translate(50%, 0%);}
+    to {transform: translate(0%, 0%);}
+}
+
+/*@keyframes quote-ani {
+    from {transform: translate(30%, 0%);}
+    to {transform: translate(-30%, 0%);}
+}*/
+
+@keyframes quote2-ani {
+    from {transform: translate(-40%, 0%);}
+    to {transform: translate(0%, 0%);}
+}
+
+body {
+    background-color: rgb(23, 23, 23);
+}
+
+.bold {
+    font-weight: 400;
+}
+
+.menu   {
+    display: flex;
+    justify-content: end;
+}
+
+.icon {
+    height: 7vh;
+    
+    margin-right: 5vw;
+    margin-top: 1vw;
+}
+
+.icon:hover {
+    transform: translate(0vw, 0.1vw);
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr min-content;
+    margin-right: 5vw;
+}
+
+.titel {
+    font-family: "Monument";
+    font-weight: bold;
+    font-size: 17vw;
+    color: rgb(255, 247, 247);
+
+    line-height: 17vw;
+    text-indent: 7vw;
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    margin-top: 0vh;
+
+    animation-name: titel-ani;
+    animation-duration: 2s;
+}
+
+.subtitel {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.8vh;
+    font-weight: lighter;
+    color: rgb(255, 247, 247);
+
+    text-indent: -1vw;
+
+    grid-column: 2;
+    grid-row: 1;
+
+    margin-left: 5vw;
+    margin-top: 32vw;
+
+    animation-name: subtitel-ani;
+    animation-duration: 3s;
+}
+
+.image1 {
+    width: 45vw;
+    margin-left: -28vw;
+
+    grid-column: 3;
+    grid-row: 1;
+
+    margin-top: 18vw;
+
+    animation-name: img-ani;
+    animation-duration: 3s;
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8.5vw;
+}
+
+.text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1vw;
+    color: rgb(255, 247, 247);
+
+    width: 55vw;
+}
+
+.quote-container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    font-family: 'Roboto Slab', serif;
+    font-size: 8vw;
+    color: rgb(255, 247, 247);
+}
+
+.quote1 {
+    margin-left: 40vw;
+
+    animation-name: quote-ani;
+    animation-duration: 2s;
+    /*animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);*/
+}
+
+.quote2{
+    animation-name: quote2-ani;
+    animation-duration: 2s;
+}
+
+.quote3 {
+    margin-left: 10vw;
+
+    animation-name: quote-ani;
+    animation-duration: 3s;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image2 {
+    width: 70vw;
+}
+
+@media screen and (max-width: 820px) {
+  
+    .top-container {
+        height: 100vh;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-right: 0vw;
+    }
+    
+    .titel {
+        font-size: 25vw;
+    
+        line-height: 15vh;
+        text-indent: 4vw;
+    
+        grid-row: 2;
+
+        margin-top: -10vw;
+
+        animation-name: titel-ani;
+        animation-duration: 1.5s;
+    }
+    
+    .subtitel {
+        font-size: 2.5vh;
+    
+        text-indent: -2vw;
+    
+        grid-column: 1/4;
+        grid-row: 2;
+    
+        margin-left: 5vw;
+        margin-top: -23vw;
+
+        animation-name: subtitel-ani;
+        animation-duration: 1s;
+    }
+    
+    .image1 {
+        width: 85vw;
+        margin-left: -78vw;
+        margin-top: -20vw;
+
+    
+        grid-column: 3;
+        grid-row: 3;
+
+        animation-name: img-ani;
+        animation-duration: 2s;
+    }
+
+    .text-container {
+        margin: 8.5vw;
+    }
+    
+    .text {
+        font-size: 3.5vw;
+    
+        width: 75vw;
+    }
+
+    .quote-container {
+        height: 28vh;
+        align-items: start;
+    }
+    
+    .quote {
+        font-size: 8vw;
+    }
+    
+    .quote1 {
+        margin-left: 30vw;
+    }
+    
+    .quote3 {
+        margin-left: 10vw;
+    }
+
+    .icon {
+        height: 5vh;
+        
+        margin-right: 5vw;
+        margin-top: 4vw;
+    }
+
+}
+
