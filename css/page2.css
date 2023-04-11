@@ -216,7 +216,8 @@ body {
     }
 
     .text-container {
-        height: 130vh;
+        margin-top: 30vw;
+        margin-bottom: 30vw;
     }
 
     .text {
