@@ -4,31 +4,6 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;900&display=swap');
 
-@keyframes titel-ani {
-    from {transform: translate(0%, 50%);}
-    to {transform: translate(0%, 0%);}
-}
-
-@keyframes img-ani {
-    from {transform: translate(0%, 70%);}
-    to {transform: translate(0%, 0%);}
-}
-
-@keyframes subtitel-ani {
-    from {transform: translate(0%, 40%);}
-    to {transform: translate(0%, 0%);}
-}
-
-@keyframes quote-ani {
-    from {transform: translate(50%, 0%);}
-    to {transform: translate(0%, 0%);}
-}
-
-@keyframes quote2-ani {
-    from {transform: translate(-40%, 0%);}
-    to {transform: translate(0%, 0%);}
-}
-
 body {
     background-color: rgb(23, 23, 23);
 }
@@ -43,10 +18,6 @@ body {
     
     margin-right: 5vw;
     margin-top: 1vw;
-}
-
-.icon:hover {
-    transform: translate(0vw, 0.1vw);
 }
 
 .bold {
@@ -74,9 +45,6 @@ body {
     grid-row: 1/2;
 
     margin-top: 20vh;
-
-    animation-name: titel-ani;
-    animation-duration: 2s;
 }
 
 .subtitel {
@@ -91,9 +59,6 @@ body {
     grid-row: 2;
 
     margin-left: 13vw;
-
-    animation-name: subtitel-ani;
-    animation-duration: 3s;
 }
 
 .image1 {
@@ -104,9 +69,6 @@ body {
     grid-row: 2;
 
     margin-top: -12vw;
-
-    animation-name: img-ani;
-    animation-duration: 3s;
 }
 
 .text-container {
@@ -135,18 +97,10 @@ body {
     font-family: 'Roboto Slab', serif;
     font-size: 8vw;
     color: rgb(255, 247, 247);
-
-}
-.quote1 {
-    animation-name: quote2-ani;
-    animation-duration: 2s;
 }
 
 .quote3 {
     margin-left: 10vw;
-
-    animation-name: quote-ani;
-    animation-duration: 2s;
 }
 
 .text2-container {
@@ -182,9 +136,6 @@ body {
         grid-row: 2;
 
         margin-top: 0vw;
-
-        animation-name: titel-ani;
-        animation-duration: 1.5s;
     }
     
     .subtitel {
@@ -197,9 +148,6 @@ body {
     
         margin-left: 10vw;
         margin-top: -15vw;
-
-        animation-name: subtitel-ani;
-        animation-duration: 1s;
     }
     
     .image1 {
@@ -211,8 +159,6 @@ body {
         grid-column: 3;
         grid-row: 3;
     
-        animation-name: img-ani;
-        animation-duration: 2s;
     }
 
     .text-container {
