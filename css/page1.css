@@ -24,11 +24,6 @@
     to {transform: translate(0%, 0%);}
 }
 
-/*@keyframes quote-ani {
-    from {transform: translate(30%, 0%);}
-    to {transform: translate(-30%, 0%);}
-}*/
-
 @keyframes quote2-ani {
     from {transform: translate(-40%, 0%);}
     to {transform: translate(0%, 0%);}
@@ -147,8 +142,6 @@ body {
 
     animation-name: quote-ani;
     animation-duration: 2s;
-    /*animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);*/
 }
 
 .quote2{
